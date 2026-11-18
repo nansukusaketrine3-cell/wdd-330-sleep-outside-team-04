@@ -1,8 +1,8 @@
 import { getLocalStorage, setLocalStorage } from "./utils.mjs";
-import ProductData from "./ProductData.mjs";
+import ProductData from "./productData.mjs";
 
 // Create a data source for tent products.
-const dataSource = new ProductData("tents");
+const dataSource = new ProductData();
 
 function addProductToCart(product) {
   // Retrieve existing cart items or start with an empty array.
