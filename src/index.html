@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sleep Outside | Home</title>
     <link rel="stylesheet" href="/css/style.css" />
+    <script src="/js/search.js" type="module"></script>
   </head>
 
   <body>
@@ -13,6 +14,19 @@
         <img src="/images/noun_Tent_2517.svg" alt="tent image for logo" />
         <a href="index.html"> Sleep<span class="highlight">Outside</span></a>
       </div>
+      <form id="search-form" class="search-form">
+        <input
+          type="search"
+          id="search-input"
+          name="search"
+          placeholder="Search products..."
+          aria-label="Search products"
+          required
+        />
+        <button type="submit" aria-label="Search">
+          Search
+        </button>
+      </form>
       <div class="cart">
         <a href="cart/index.html">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
