@@ -1,4 +1,4 @@
-const baseURL = import.meta.env.VITE_SERVER_URL;
+npm.cmd run lintconst baseURL = import.meta.env.VITE_SERVER_URL;
 const categories = ["tents", "backpacks", "sleeping-bags"];
 
 const searchForm = document.querySelector("#search-form");
