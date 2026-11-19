@@ -1,4 +1,4 @@
-npm.cmd run lintconst baseURL = import.meta.env.VITE_SERVER_URL;
+const baseURL = import.meta.env.VITE_SERVER_URL;
 const categories = ["tents", "backpacks", "sleeping-bags"];
 
 const searchForm = document.querySelector("#search-form");
@@ -74,8 +74,9 @@ async function runSearch(searchTerm) {
     const products = await searchProducts(searchTerm);
     displayResults(products);
   } catch (error) {
-    console.error(error);
-    message.textContent = "Sorry, something went wrong. Please try again.";
+    message.textContent = "Search failed. Please try again.";
+    message.textContent =
+      "Sorry, something went wrong. Please try again.";
   }
 }
 
